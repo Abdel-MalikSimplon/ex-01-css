@@ -1,0 +1,101 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 62.5%
+}
+
+/* Styles appliquer à la classe conteneur qui englobe l'ensemble du site */
+
+.conteneur {
+    width: 730px;
+    height: auto;
+    margin: 10px auto;
+}
+
+/* La classe {article} qui englobe l'ensemble de l'article */
+
+.article {
+
+}
+
+
+/* Header du site qui contient :
+ * le titre principal (h1)
+ * information : date de publication, auteur...
+*/
+
+.header-page {
+}
+/* titre (h1) de l'article */
+.titre-principal {
+    font-size: 2.9em;
+}
+
+.image-date {
+    margin-right: 5px;
+}
+
+.date-auteur {
+    vertical-align: middle;
+}
+
+.contain-image {
+    position: relative;
+    width: 730px;
+    height: 548px;
+}
+
+.fond-article {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+p {
+    font-size: 1.6em;
+}
+
+/* extrait de texte dans l'image */
+
+.extrai-article {
+    color: white;
+    padding-left: 15px;
+}
+
+.st-article {
+    font-size: 1.8em;
+}
+
+.para {
+    font-size: 1.6em;
+    text-align: justify;
+}
+
+a {
+    color: blue;
+}
+
+a[href^="http"]{
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px dashed blue;
+}
+
+a[href^="http"]:before, a[href^="http"]:after {
+    content: url('img/link74.png');
+    margin-right: 5px;
+    margin-left: 5px;
+}
